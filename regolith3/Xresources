@@ -1,0 +1,10 @@
+!regolith.look.path: /usr/share/regolith-look/lascaille
+regolith.look.path: /usr/share/regolith-look/gruvbox
+
+wm.binding.launcher.app: d
+wm.binding.launcher.cmd: Shift+d
+wm.binding.launcher.window: Ctrl+d
+
+wm.binding.layout_mode: w
+
+wm.gaps.inner.size: 0

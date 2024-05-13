@@ -1,5 +1,6 @@
 " Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
+set backspace=2
 
 " Enable type file detection. Vim will be able to try to detect the type of file in use.
 filetype on
@@ -94,12 +95,5 @@ set smarttab
 " 1 tab == 2 spaces
 set tabstop=2 shiftwidth=2 expandtab
 set noai
-
-"plugin manager ----
-call plug#begin()
-
-Plug 'sheerun/vim-polyglot'
-
-call plug#end()
 
 set list listchars=tab:»·,trail:·

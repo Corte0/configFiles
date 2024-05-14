@@ -103,7 +103,7 @@ function parse_git_dirty {
 	fi
 }
 
-export PS1="\[\e[32m\]\u\[\e[m\]\[\e[32m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\]:\[\e[34m\]\W\[\e[m\]\[\e[35m\]\`parse_git_branch\`\[\e[m\]\\$ "
+export PS1="\[\e[32m\]\[\e[1m\]\u@\h\[\e[m\]:\[\e[34m\]\w\[\e[m\]\[\e[31m\]\`parse_git_branch\`\[\e[m\]\\[\e[33m\]$\[\e[m\] "
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -118,7 +118,7 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # colored GCC warnings and errors
-#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
 alias ll='ls -alF'
@@ -148,3 +148,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+export VISUAL=vim
+export EDITOR="$VISUAL"

@@ -1,3 +1,22 @@
+" Function for git commit
+function! Commit()
+  " Save the current file
+  execute 'w'
+  " Stage all changes
+  execute 'silent !git add .'
+  " Prompt for commit message
+  let l:message = input('Commit message: ')
+  " Commit with the provided message
+  execute 'silent !git commit -m "' . l:message . '"'
+  echo "Committed with message: " . l:message
+endfunction
+
+" custom commands
+command Pull :!git pull
+command! Commit call Commit()
+command Push :! git Push
+command Diff :! git diff
+
 " Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
 set backspace=2
@@ -18,15 +37,13 @@ syntax on
 
 " Add numbers to each line on the left-hand side.
 set number
+set relativenumber
 
 " Highlight cursor line underneath the cursor horizontally.
 set cursorline
 
 " Set shift width to 4 spaces.
 set shiftwidth=4
-
-" Set tab width to 4 columns.
-set tabstop=4
 
 " Use space characters instead of tabs.
 set expandtab
@@ -90,6 +107,9 @@ set noai
 map <C-h> :tabprevious<CR>
 map <C-l> :tabnext<CR>
 map <C-n> :tabnew 
+map <C-a> @
+map gd :! git pull
+
 set smarttab
 
 " 1 tab == 2 spaces

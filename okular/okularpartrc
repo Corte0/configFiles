@@ -1,0 +1,11 @@
+[Document]
+ChangeColors=true
+
+[General]
+ttsVoice=English (America, New York City)+grandma
+
+[Main View]
+SplitterSizes=418,1498
+
+[Reviews]
+QuickAnnotationTools=<tool name="trazo fino" type="ink" id="1"><engine color="#ffed333b" type="SmoothLine"><annotation color="#ffed333b" width="1" type="Ink"/></engine><shortcut>1</shortcut></tool>,<tool name="trazo grueso" type="ink" id="2"><engine color="#ffe01b24" type="SmoothLine"><annotation color="#ffe01b24" width="2" type="Ink"/></engine><shortcut>2</shortcut></tool>,<tool name="Yellow Highlighter" type="highlight" default="true" id="3"><engine color="#ffff00" type="TextSelector"><annotation color="#ffffff00" type="Highlight"/></engine><shortcut>3</shortcut></tool>,<tool name="Green Highlighter" type="highlight" default="true" id="4"><engine color="#00ff00" type="TextSelector"><annotation color="#ff00ff00" type="Highlight"/></engine><shortcut>4</shortcut></tool>,<tool type="highlight" id="5"><engine color="#ff9141ac" type="TextSelector"><annotation color="#ff9141ac" type="Highlight"/></engine><shortcut>5</shortcut></tool>,<tool type="note-linked" id="6"><engine hoverIcon="tool-note" color="#ffff00" type="PickPoint"><annotation icon="Note" color="#ffffff00" type="Text"/></engine><shortcut>6</shortcut></tool>,<tool type="straight-line" id="7"><engine color="#ffffa348" type="PolyLine" points="2"><annotation color="#ffffa348" width="1" endStyle="5" type="Line" startStyle="5"/></engine><shortcut>7</shortcut></tool>,<tool type="underline" id="8"><engine color="#ff0000" type="TextSelector"><annotation color="#ffff0000" type="Underline"/></engine><shortcut>8</shortcut></tool>,<tool name="Insert Text" type="typewriter" default="true" id="9"><engine type="PickPoint" block="true"><annotation color="#00ffffff" width="0" type="Typewriter" textColor="#000000"/></engine><shortcut>9</shortcut></tool>,<tool type="note-inline" id="10"><engine hoverIcon="tool-note-inline" color="#ffff00" type="PickPoint" block="true"><annotation color="#ffffff00" type="FreeText" textColor="#ff000000"/></engine></tool>

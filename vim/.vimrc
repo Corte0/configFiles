@@ -22,18 +22,16 @@ set nocompatible
 set backspace=2
 
 " Enable type file detection. Vim will be able to try to detect the type of file in use.
-filetype on
-
-" Enable plugins and load plugin for the detected file type.
-filetype plugin on
+"filetype on
 
 " Load an indent file for the detected file type.
 filetype indent on
 
 "color scheme
 colorscheme retrobox
+
 " Turn syntax highlighting on.
-syntax on
+"syntax on
 
 " Add numbers to each line on the left-hand side.
 set number
@@ -108,12 +106,5 @@ map <C-h> :tabprevious<CR>
 map <C-l> :tabnext<CR>
 map <C-n> :tabnew 
 map <C-a> @
-map gd :! git pull
-
-set smarttab
-
-" 1 tab == 2 spaces
-set tabstop=2 shiftwidth=2 expandtab
-set noai
 
 set list listchars=tab:»·,trail:·
